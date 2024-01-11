@@ -123,11 +123,12 @@
             content: "";
             position: absolute;
             left: 0;
-            transform: all .2s;
+            transition: all .2s;
         }
 
         &::before {
-            top: -.8rem
+            top: -.8rem;
+
         }
 
         &::after {

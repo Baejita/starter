@@ -662,7 +662,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    transform: all .2s; }
+    transition: all .2s; }
   .navigation__icon::before {
     top: -.8rem; }
   .navigation__icon::after {
