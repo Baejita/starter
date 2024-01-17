@@ -11,6 +11,12 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+  }
+
   &__logo {
     height: 10rem;
 
@@ -22,10 +28,32 @@
   }
 
   &__profile {
-    height: 100rem;
+    height: 60rem;
     position: absolute;
     right: 0rem;
-    margin-right: -5rem;
+
+    @include respond(tab-land) {
+      height: 80rem;
+      right: -2rem;
+      top: 10rem;
+    }
+
+    @include respond(tab-port) {
+      height: 70rem;
+      right: 0;
+      top: 8rem;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    @include respond(big-desktop) {
+      height: 100%;
+      right: 2rem;
+      top: 4rem;
+    }
+
   }
 
   &__text-box {
