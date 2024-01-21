@@ -17,8 +17,9 @@
     height: 95vh;
   }
 
-  @media (min-resolution: 192dpi) and (min-width:37.5rem),
-  (-webkit-min-device-pixel-ration:2) and (min-width:37.5rem),
+  @media only screen and(min-resolution: 192dpi) and (min-width:37.5rem),
+  only screen and (-webkit-min-device-pixel-ration:2),
+  only screen and(min-width:37.5rem),
   (min-width:125rem) {
     //ปัจจุบันใช้ได้แล้ว
     // ตัว , หมายถึง และ
